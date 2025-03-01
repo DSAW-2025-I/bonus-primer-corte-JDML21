@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Mi TODO list</h1>
-    <script src="scripts/script.js"></script>
-  </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de Tareas </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Lista de Tareas</h1>
+        </header>
+        
+        <section class="task-input">
+            <input type="text" id="task" placeholder="Agregar nueva tarea..." aria-label="Nueva tarea">
+            <button id="addTask" aria-label="Añadir tarea">+</button>
+        </section>
+        
+        <section>
+            <ul id="task-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
